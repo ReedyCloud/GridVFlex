@@ -1,0 +1,21 @@
+.Wrapper {
+  border: 2px solid red;
+  width: 50%;
+  height: 800px;
+}
+
+.GridContainer {
+  height: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+
+  & > div {
+    border: 1px solid black;
+    // justify-self: center;
+    // align-self: center;
+    //place-self: center;
+  }
+}

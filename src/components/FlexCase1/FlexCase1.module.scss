@@ -1,0 +1,44 @@
+.Wrapper {
+  border: 2px solid red;
+  width: 50%;
+  height: 800px;
+}
+
+.FlexContainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  & > div {
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+}
+.Header {
+  width: 100%;
+  height: calc(20% - 8px);
+  background-color: gray;
+}
+
+.Content {
+  width: 60%;
+  height: 60%;
+  background-color: rgb(90, 90, 90);
+}
+
+.Foo {
+  width: 20%;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 20%;
+  background-color: rgb(187, 187, 187);
+}
+
+.Footer {
+  background-color: rgb(119, 113, 113);
+  width: 100%;
+  height: calc(20% - 8px);
+  margin-top: auto;
+}

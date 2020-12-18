@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import FlexCase from "./components/FlexCase/FlexCase";
+import FlexCase1 from "./components/FlexCase1/FlexCase1";
+import FlexCase2 from "./components/FlexCase2/FlexCase2";
+import GridCase from "./components/GridCase/GridCase";
+import GridCase1 from "./components/GridCase1/GridCase1";
+import GridCase2 from "./components/GridCase2/GridCase2";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <FlexCase />
+      <GridCase /> */}
+      {/* <FlexCase1 />
+      <GridCase1 /> */}
+      {/* <FlexCase2 />
+      <GridCase2 /> */}
     </div>
   );
 }

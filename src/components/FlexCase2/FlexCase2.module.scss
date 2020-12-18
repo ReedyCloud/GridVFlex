@@ -1,0 +1,99 @@
+.Wrapper {
+  border: 2px solid red;
+  width: 50%;
+  height: 800px;
+}
+
+.FlexContainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+
+  & > div {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: calc(33.3333% - 10px);
+    height: calc(33.3333% - 6.5px);
+    margin: 5px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-of-type {
+      @media (max-width: 1600px) {
+        width: 100%;
+        height: calc(20% - 8px);
+      }
+
+      @media (max-width: 800px) {
+        height: calc(11% - 8px);
+      }
+    }
+
+    @media (max-width: 1600px) {
+      width: calc(50% - 10px);
+      height: calc(20% - 8px);
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+      height: calc(11% - 8px);
+    }
+  }
+}
+
+.Cell--1 {
+  @media (max-width: 800px) {
+    order: 5;
+  }
+}
+
+.Cell--2 {
+  @media (max-width: 800px) {
+    order: 2;
+  }
+}
+
+.Cell--3 {
+  @media (max-width: 800px) {
+    order: 4;
+  }
+}
+
+.Cell--4 {
+  @media (max-width: 800px) {
+    order: 7;
+  }
+}
+
+.Cell--5 {
+  @media (max-width: 800px) {
+    order: 3;
+  }
+}
+
+.Cell--6 {
+  @media (max-width: 800px) {
+    order: 8;
+  }
+}
+
+.Cell--7 {
+  @media (max-width: 800px) {
+    order: 2;
+  }
+}
+
+.Cell--8 {
+  @media (max-width: 800px) {
+    order: 9;
+  }
+}
+
+.Cell--9 {
+  @media (max-width: 800px) {
+    order: 1;
+  }
+}

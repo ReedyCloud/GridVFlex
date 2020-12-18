@@ -1,0 +1,23 @@
+.Wrapper {
+  border: 2px solid red;
+  width: 50%;
+  height: 800px;
+}
+
+.FlexContainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -5px;
+
+  & > div {
+    box-sizing: border-box;
+    flex: 1 0 16%;
+    flex-grow: 1;
+    height: 19%;
+    margin: 5px;
+
+    border: 1px solid black;
+  }
+}
